@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
 
-from models import Session
+from .models import Session
 
 class SessionSerializer(ModelSerializer):
 	class Meta:

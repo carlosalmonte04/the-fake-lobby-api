@@ -152,6 +152,8 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_WHITELIST = (
     'localhost:3000',
     'localhost:3002',
+    'the-fake-lobby.herokuapp.com'
+    'the-fake-lobby-api.herokuapp.com'
 )
 
 

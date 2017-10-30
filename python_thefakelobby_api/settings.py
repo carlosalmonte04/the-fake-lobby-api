@@ -26,7 +26,7 @@ SECRET_KEY = 'o9l9_(2k6by21^bdw!cdqana8h-k_j%5f+@k_!d1rr(o_g&2_f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'the-fake-lobby.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'the-fake-lobby.herokuapp.com', 'the-fake-lobby-api.herokuapp.com']
 
 
 # Application definition

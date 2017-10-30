@@ -21,12 +21,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'o9l9_(2k6by21^bdw!cdqana8h-k_j%5f+@k_!d1rr(o_g&2_f'
+SECRET_KEY = 'o9l9_(2k6by21^bdw!cdqana8h-k_j%5f+@k_!d1rr(o_g&2_f' # NOT BEING USED ANYWHERE
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'the-fake-lobby.herokuapp.com', 'the-fake-lobby-api.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'the-fake-lobby.herokuapp.com', 'the-fake-lobby-api.herokuapp.com', 'http://the-fake-lobby.herokuapp.com']
 
 
 # Application definition
@@ -152,8 +152,9 @@ REST_FRAMEWORK = {
 CORS_ORIGIN_WHITELIST = (
     'localhost:3000',
     'localhost:3002',
-    'the-fake-lobby.herokuapp.com'
-    'the-fake-lobby-api.herokuapp.com'
+    'the-fake-lobby.herokuapp.com',
+    'the-fake-lobby-api.herokuapp.com',
+    'http://the-fake-lobby.herokuapp.com',
 )
 
 

@@ -1,8 +1,8 @@
-from rest_framework.serializers import ModelSerializer
+from rest_framework import serializers
 
 from .models import Session
 
-class SessionSerializer(ModelSerializer):
+class SessionSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Session
-		fields = ('insider', 'jobSeeker', 'date', 'title', 'comments', 'time')
+		fields = ('id', 'insider', 'jobSeeker', 'date', 'title', 'comments', 'time')
